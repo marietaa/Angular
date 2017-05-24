@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="app">
+
+    <head>
+        <title>Introduccion a Angular 1.6x</title>
+        <meta charset="UTF-8">
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script1.js" type="text/javascript"></script>
+
+    </head>
+
+    <body ng-controller="pruebaControlador">
+        <h1>Primer mensaje: {{mensaje}}</h1>
+        <h1>Segundo mensaje: {{mensaje2}}</h1>
+        <button ng-click="cambiarMensaje2()">Cambiar Mensaje</button>
+        
+        <p></p>
+        <div>Mensaje 1: <input type="text" ng-model="mensaje"/></div>
+         <p></p>
+        <div>Mensaje 2: <input type="text" ng-model="mensaje2"/></div>
+         <p></p>
+        <div>Mensaje 3: <input type="text" ng-model="mensaje3"/></div>
+        <h3>{{mensaje3}}</h3>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="ejercicio">
+    <head>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script3.js"></script>
+    </head>
+    <body ng-controller="controladorPrincipal">
+        <form>
+            <fieldset>
+                <legend>Datos de Alta</legend>
+                <!--<label for="nif">NIF:</label><input id="nif" name="nif" type="text" ng-model="seguro.nif" /><br>-->
+                <label for="nombre"><b>Nombre:  </b></label><input id="nombre" name="nombre" type="text" ng-model="datos.nombre"/><br>
+                <label for="apellido"><b>Apellidos:  </b></label><input id="apellido" name="apellido" type="text" ng-model="datos.apellido" /><br>
+                <label for="edad"><b>Edad:  </b></label><input id="edad" name="edad" type="text" ng-model="datos.edad" /><br>
+                <!-- <label for="sexo">Sexo:</label><select id="sexo" name="sexo" type="checkbox" ng-model="" ><option value="">--Elige opcion--</option><option value="H">Hombre</option><option value="M">Mujer</option></select><br>-->
+                <!--<label for="casado">Casado:</label><input id="casado" name="casado" type="checkbox" ng-model="seguro.casado" /><br>-->
+                <!--<label for="numHijos">Nº Hijos:</label><input id="numHijos" name="numHijos" type="text" ng-model="seguro.numHijos" /><br>-->
+                <!-- <label for="embarazada">Embarazada:</label><input id="embarazada" name="embarazada" type="checkbox" ng-model="seguro.embarazada" /><br>-->
+                <!-- <label for="fechaCreacion">Fecha de creaci&oacute;n:</label><input id="fechaCreacion" name="fechaCreacion" type="text" ng-model="seguro.fechaCreacion" /><br>-->
+                <!-- </fieldset>
+                <!-- <fieldset>
+                     <legend>Coberturas</legend>
+                     <label for="oftalmologia">Oftalmologia:</label><input id="oftalmologia" name="oftalmologia" type="checkbox" ng-model="seguro.coberturas.oftalmologia" /><br>
+                     <label for="dental">Dental:</label><input id="dental" name="dental" type="checkbox" ng-model="seguro.coberturas.dental" /><br>
+                     <label for="fecundacionInVitro">Fecundacion In Vitro:</label><input id="fecundacionInVitro" name="fecundacionInVitro" type="checkbox" ng-model="seguro.coberturas.fecundacionInVitro" /><br>
+                 </fieldset> -->     
+
+                </br>
+                <legend><b>Nivel Educativo</b></legend>
+
+                <label for="primaria">Educacion Primaria</label>
+                <input id="primaria" name="primaria" type="checkbox" ng-model="datos.educacion.primaria" /><br>
+                <label for="secundaria">Educacion Secundaria</label><input id="secundaria" name="secundaria" type="checkbox" ng-model="datos.educacion.secundaria" /><br>
+                <label for="universidad">Educacion Universitaria</label><input id="universidad" name="universidad" type="checkbox" ng-model="datos.educacion.universidad" /><br>
+                <!--<label for="alergia">Alergia:</label><input id="alergia" name="alergia" type="checkbox" ng-model="seguro.enfermedades.alergia" /><br>
+                <label for="nombreAlergia">Nombre de la alergia:</label><input id="nombreAlergia" name="nombreAlergia" type="text" ng-model="seguro.enfermedades.nombreAlergia" /><br>-->
+            </fieldset> 
+             </br>
+            <button ng-click="cargarDatos()">Cargar Datos</button>
+
+
+        </form>
+
+        <h3>Nombre:  {{datos.nombre}}</h3>
+        <h3>Apellidos:  {{datos.apellido}}</h3>
+        <h3>Edad:  {{datos.edad}}</h3>
+    </body>
+</html>

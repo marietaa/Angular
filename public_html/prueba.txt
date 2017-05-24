@@ -1,0 +1,2 @@
+<p>AJAX</p>
+<p>Probando Ajax</p>
